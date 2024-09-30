@@ -1,5 +1,9 @@
 :root {
       --border-color: rgb(147, 147, 147);
+      --text-color: rgb(56, 56, 56);
+      --background-color: #f4f4f4;
+      --code-background: #f7f7f7;
+      --code-color: #dcdcaa;
 }
 
 body {
@@ -24,12 +28,12 @@ body {
 
 li,
 p {
-      color: rgb(56, 56, 56);
+      color: var(--text-color);
 }
 
 code {
-      background-color: #f7f7f7;
-      color: #dcdcaa;
+      background-color: var(--code-background);
+      color: var(--code-color);
       padding: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -50,9 +54,8 @@ code {
       color: black;
 }
 
-
 #navbar {
-      background-color: #f4f4f4;
+      background-color: var(--background-color);
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -61,6 +64,7 @@ code {
       border: 2px var(--border-color) solid;
       border-left: 0;
       border-top: 0;
+      border-bottom: 0;
 }
 
 h1 {
@@ -78,7 +82,6 @@ img {
       flex-direction: row;
       padding: 50px;
 }
-
 
 #main-doc {
       padding: 20px;
@@ -100,7 +103,7 @@ img {
       padding: 20px;
 }
 
-a {
+.nav-link {
       text-decoration: none;
       padding: 100px;
       padding-top: 20px;
@@ -111,6 +114,25 @@ a {
       border-left: 0;
 }
 
-a:first-child {
+.nav-link:first-child {
       border-top: 2px var(--border-color) solid;
+}
+
+.nav-link:hover {
+      background-color: rgba(39, 39, 39, 0.2);
+}
+
+@media (max-width: 1300px) {
+      body {
+            flex-direction: column;
+      }
+
+      #navbar {
+            display: block;
+            max-width: none;
+            text-align: center;
+      }
+      .titulo-icone{
+            justify-content: center;
+      }
 }

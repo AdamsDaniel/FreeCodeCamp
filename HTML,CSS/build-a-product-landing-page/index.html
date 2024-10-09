@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Laces UP!</title>
+        <!-- Carregando o arquivo CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Preconnect para otimizar o carregamento das fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Importando a fonte Open Sans do Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div class="left">
+                <a href="#header"><img
+                        src="https://i.ibb.co/1QXxQDB/sem-fundo.png"
+                        alt="Logo Laces UP"
+                        id="header-img"></a>
+                <h3>Laces UP!</h3>
+            </div>
+            <div class="right">
+                <nav id="nav-bar">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#como-funciona" class="nav-link">Como funciona</a>
+                    <a href="#precos" class="nav-link">Preços</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Seção Principal com Frase de Efeito -->
+        <section id="hero">
+            <h1>Amarre-se ao estilo com <span>Laces UP!</span></h1>
+            <p>Descubra a revolução nos cadarços que vai dar um novo passo na
+                sua vida.</p>
+            <a href="#form" class="btn">Inscreva-se Agora</a>
+        </section>
+
+        <!-- Seção de Produtos -->
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-container">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img
+                        src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/107166/02/sv01/fnd/BRA/w/1000/h/1000/fmt/png"
+                        alt="Produto 1">
+                    <h3>Puma FUTURE ULTIMATE</h3>
+                    <p>A FUTURE está de volta, assim como os passes de
+                        calcanhar, as passadas e os passes sem olhar. Inspirada
+                        no estilo de jogo de Neymar Jr.</p>
+                    <a href="#" class="btn-produto">Saiba Mais</a>
+                </div>
+                <!-- Produto 2 -->
+                <div class="produto">
+                    <img
+                        src="https://images.tcdn.com.br/img/img_prod/1141538/chuteira_nike_campo_phantom_gx_ii_academy_rosa_18369_1_7806fc6f5ab182cf8cfe84633f00cc7f.jpg"
+                        alt="Produto 2">
+                    <h3>Nike Campo Phantom GX II</h3>
+                    <p>Querendo levar seu jogo para o próximo nível? A Phantom
+                        GX 2 Academy ajuda a colocá-lo em uma posição
+                        privilegiada na rede, seja você o organizador,
+                        assistente ou finalizador. O resto é com você.</p>
+                    <a href="#" class="btn-produto">Saiba Mais</a>
+                </div>
+                <!-- Produto 3 -->
+                <div class="produto">
+                    <img
+                        src="https://acdn.mitiendanube.com/stores/002/341/698/products/chuteira-adidas-f50-elite-fg-laceless-advancement-branco-azul-laranja-1-1-35a6b1504174be6aa217174598196617-1024-1024.png"
+                        alt="Produto 3">
+                    <h3>Adidas F50 Elite FG Laceless</h3>
+                    <p>Projetadas para liberar todo o seu potencial de
+                        aceleração, essas chuteiras combinam tecnologia
+                        inovadora com um estilo imbatível</p>
+                    <a href="#" class="btn-produto">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeo -->
+        <section id="video">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/BcIfsng1O1A"
+                title="Vídeo sobre Laces UP!" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- Formulário de Inscrição -->
+        <section id="subscription">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" id="email" name="email"
+                    placeholder="Digite seu email" required>
+                <input type="submit" id="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>

@@ -146,7 +146,7 @@ h2 {
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 900px);
     grid-auto-rows: auto;
     grid-gap: 10px;
     justify-content: center;
@@ -157,11 +157,71 @@ h2 {
     }
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-info, .footer-social {
+    margin-bottom: 1rem;
+}
+
+.footer-info p, .footer-social p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color:white;
+}
+
+.footer-info h3, .footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
 
 
 @media screen and (max-width: 1500px) {}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 2100px) {
     .text-container {
         padding: 0;
     }

@@ -3,12 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Laces UP!</title>
-        <!-- Carregando o arquivo CSS -->
         <link rel="stylesheet" href="styles.css">
         <!-- Preconnect para otimizar o carregamento das fontes -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Importando a fonte Open Sans do Google Fonts -->
+        <!--Open Sans do Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
             rel="stylesheet">
@@ -20,18 +19,19 @@
                         src="https://i.ibb.co/1QXxQDB/sem-fundo.png"
                         alt="Logo Laces UP"
                         id="header-img"></a>
-                <h3>Laces UP!</h3>
+                <a href="#header" style="text-decoration:none;"><h3>Laces
+                        UP!</h3></a>
             </div>
             <div class="right">
                 <nav id="nav-bar">
                     <a href="#inicio" class="nav-link">Início</a>
                     <a href="#como-funciona" class="nav-link">Como funciona</a>
-                    <a href="#precos" class="nav-link">Preços</a>
+                    <a href="#produtos" class="nav-link">Preços</a>
                 </nav>
             </div>
         </header>
 
-        <!-- Seção Principal com Frase de Efeito -->
+        <div id="inicio"></div>
         <section id="hero">
             <h1>Amarre-se ao estilo com <span>Laces UP!</span></h1>
             <p>Descubra a revolução nos cadarços que vai dar um novo passo na
@@ -80,22 +80,26 @@
             </div>
         </section>
 
-        <!-- Seção de Vídeo -->
-        <section id="video">
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/BcIfsng1O1A"
-                title="Vídeo sobre Laces UP!" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
+        <div class="secao-final">
+            <!-- Seção de Vídeo -->
+            <div id="como-funciona">
+                <iframe id="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/BcIfsng1O1A"
+                    title="Vídeo sobre Laces UP!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-        <!-- Formulário de Inscrição -->
-        <section id="subscription">
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input type="email" id="email" name="email"
-                    placeholder="Digite seu email" required>
-                <input type="submit" id="submit" value="Enviar">
-            </form>
-        </section>
+            <!-- Formulário de Inscrição -->
+            <section id="subscription footer">
+                <form action="https://www.freecodecamp.com/email-submit"
+                    id="form">
+                    <input type="email" id="email" name="email"
+                        placeholder="Digite seu email" required>
+                    <input type="submit" id="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
     </body>
 </html>

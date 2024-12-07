@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+#navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ad2626;
+      color: #000001;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 1000;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar h1 {
+      font-size: x-large;
+      margin: 0;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px #000001;
+}
+
+.nav-list {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+}
+
+.nav-item {
+      margin: 0 15px;
+}
+
+.nav-item a {
+      text-decoration: none;
+      color: #721111;
+      transition: color 0.3s ease;
+      font-size: x-large;
+      font-weight: bold;
+}
+
+.nav-item a:hover {
+      color: #fff5db;
+      cursor: pointer;
+}
+
+#welcome-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      background: linear-gradient(135deg, #292525, #606060);
+      color: #d4d4d4;
+      text-align: center;
+      padding-top: 100px;
+}
+
+.intro-title {
+      font-size: 32px;
+      margin-bottom: 15px;
+}
+
+.intro-description {
+      font-size: 20px;
+      color: #ad2626;
+}
+
+#projects {
+      padding: 60px 20px;
+      background-color: #b7b2b2;
+      color: #292525;
+      text-align: center;
+}
+
+.galeria {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      justify-content: center;
+}
+
+.project-tile {
+      margin-bottom: 30px;
+}
+
+.projects-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+}
+
+.projects-description {
+      font-size: 18px;
+      margin-bottom: 20px;
+}
+
+.project-item {
+      margin: 10px 0;
+}
+
+.view-more {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #721111;
+      color: #fff5db;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+      background-color: #ad2626;
+}
+
+#contact {
+      padding: 60px 20px;
+      background-color: #ecdede;
+      color: #292525;
+      text-align: center;
+}
+
+.contact-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+}
+
+.social-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+      transform: scale(1.1);
+}
+
+.contact-note {
+      margin-top: 20px;
+      font-size: 16px;
+}
+
+.icon-credits {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #606060;
+}
+
+.icon {
+      text-decoration: none;
+}
+
+.view-more-container {
+      position: relative;
+      display: inline-block;
+}
+
+.caption-text {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #b7b2b2;
+      color: #292525;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      z-index: 10;
+}
+
+.view-more-container:hover .caption-text {
+      display: block;
+}
+
+/* Tablet Responsive Design */
+@media screen and (min-width: 768px) {
+      #navbar {
+            flex-direction: row;
+            align-items: center;
+      }
+
+      .nav-list {
+            flex-direction: row;
+      }
+
+      .nav-item {
+            margin: 0 15px;
+      }
+
+      .galeria {
+            grid-template-columns: repeat(2, 1fr);
+      }
+
+      .intro-title {
+            font-size: 2.5rem;
+      }
+
+      .intro-description {
+            font-size: 1.5rem;
+      }
+
+}
+
+/* Desktop Responsive Design */
+@media screen and (min-width: 1024px) {
+      .galeria {
+            grid-template-columns: repeat(3, 1fr);
+      }
+
+      #welcome-section {
+            padding: 0 10%;
+      }
+
+      .intro-title {
+            font-size: 3rem;
+      }
+
+      .intro-description {
+            font-size: 1.8rem;
+      }
+}
+
+/* Accessibility and Performance Enhancements */
+@media (prefers-reduced-motion: reduce) {
+      * {
+            transition: none !important;
+      }
+}
+
+/* Print Styles */
+@media print {
+      body {
+            font-size: 12pt;
+      }
+
+      #navbar,
+      #contact {
+            display: none;
+      }
+}
+
+@media screen and (max-width: 768px) {
+      .nav-list {
+            display: none;
+      }
+
+      #navbar {
+            justify-content: space-between;
+            padding: 10px 0;
+      }
+
+      #navbar h1 {
+            padding: 0 20px;
+            text-align: center;
+      }
+
+}
+
+.icon-credits a{
+      text-decoration: none;
+      color:black
+}
+.icon-credits a:hover{
+      text-decoration: underline;
+      color:#721111;
+}
